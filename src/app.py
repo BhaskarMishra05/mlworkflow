@@ -4,6 +4,8 @@ import sys
 import os
 # from data ingestion
 from src.components.data_ingestion import DATAINGESTION
+# from data transformation
+from src.components.data_transformation import DATA_TRANSFORMATION
 
 # Just for testing the code
 # This part is commented out to avoid execution errors when running the script directly.
@@ -27,3 +29,13 @@ if __name__ == '__main__':
     except Exception as e:
         logging.error(f'An error occured during data ingestion {e}')
         raise CustomException (e,sys)
+    
+
+    try:
+        logging.info('Starting data transformation stage')
+        data_transformation_obj = DATA_TRANSFORMATION()
+        train_array, test_array, preprocessing_obj = data_transformation_obj.preprocessing_initializer_function(train_data=data_ingestion_obj.data_ingestion_config.train_data_path,
+                                                                                                                test_data=data_ingestion_obj.data_ingestion_config.test_data_path)
+        logging.info('Data transformation completed Successufully')
+    except Exception as e:
+        raise CustomException(e,sys)
