@@ -1,0 +1,5 @@
+[2025-07-30 18:58:44,949] 161 - INFO - NumExpr defaulting to 4 threads.
+[2025-07-30 18:58:45,196] 23 - INFO - Staring data ingestion
+[2025-07-30 18:58:45,196] 23 - INFO - Created directory for raw data and other files too
+[2025-07-30 18:58:45,200] 26 - INFO - Read the data from raw csv file
+[2025-07-30 18:58:45,207] 32 - INFO - Train adn test datasets are saved successfully

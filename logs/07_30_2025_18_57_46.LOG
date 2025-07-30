@@ -1,0 +1,9 @@
+[2025-07-30 18:57:47,097] 161 - INFO - NumExpr defaulting to 4 threads.
+[2025-07-30 18:57:47,332] 11 - INFO - Starting the application
+[2025-07-30 18:57:47,333] 14 - ERROR - An error occurred: division by zero
+[2025-07-30 18:57:47,333] 16 - ERROR - Error occurred in Python script name [/home/bhaskar/Here_we_go_again/VS_code_ting/mlworkflow/src/app.py] line number [12] error message [division by zero]
+[2025-07-30 18:57:47,333] 17 - INFO - Application finished with errors
+[2025-07-30 18:57:47,333] 21 - INFO - Staring data ingestion
+[2025-07-30 18:57:47,333] 23 - INFO - Created directory for raw data and other files too
+[2025-07-30 18:57:47,341] 26 - INFO - Read the data from raw csv file
+[2025-07-30 18:57:47,349] 32 - INFO - Train adn test datasets are saved successfully

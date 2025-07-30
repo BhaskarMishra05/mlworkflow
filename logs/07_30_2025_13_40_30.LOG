@@ -1,0 +1,4 @@
+[2025-07-30 13:40:30,258] 10 - INFO - Starting the application
+[2025-07-30 13:40:30,258] 13 - ERROR - An error occurred: division by zero
+[2025-07-30 13:40:30,258] 15 - ERROR - Error occurred in Python script name [/home/bhaskar/Here_we_go_again/VS_code_ting/mlworkflow/src/app.py] line number [11] error message [division by zero]
+[2025-07-30 13:40:30,258] 16 - INFO - Application finished with errors
