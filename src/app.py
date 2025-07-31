@@ -6,6 +6,7 @@ from flask import Flask, request, render_template
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.prediction_pipeline import CUSTOMDATA, PredictPipeline
 
+
 application = Flask(__name__)
 app = application
 

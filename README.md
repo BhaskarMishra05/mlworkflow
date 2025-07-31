@@ -31,5 +31,9 @@ MLWORKFLOW/
 ## End of day 1 Successfully <br>
 
 # Day 2:
-`Create model trainer`
-`custom functions in utils`
+`Create model trainer` <br>
+`custom functions in utils` <br>
+`prediction_pipeline`<br>
+`flask app`<br>
+
+## End of day 2 Successfully <br>
