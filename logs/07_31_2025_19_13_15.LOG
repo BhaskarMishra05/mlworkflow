@@ -1,0 +1,4 @@
+[2025-07-31 19:13:16,645] 161 - INFO - NumExpr defaulting to 4 threads.
+[2025-07-31 19:13:17,322] 30 - INFO - Staring data ingestion
+[2025-07-31 19:13:17,323] 23 - INFO - Created directory for raw data and other files too
+[2025-07-31 19:13:17,327] 35 - ERROR - An error occured during data ingestion 'FileNotFoundError' object has no attribute 'sys'

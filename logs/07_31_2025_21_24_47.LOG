@@ -1,0 +1,7 @@
+[2025-07-31 21:24:47,891] 97 - WARNING -  * Debugger is active!
+[2025-07-31 21:24:47,891] 97 - INFO -  * Debugger PIN: 202-409-145
+[2025-07-31 21:24:58,685] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:24:58] "GET /predictdata HTTP/1.1" 200 -
+[2025-07-31 21:25:11,409] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:25:11] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2025-07-31 21:25:11,467] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:25:11] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-07-31 21:25:11,472] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:25:11] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-07-31 21:25:11,521] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:25:11] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=Cymk3BMAc2hvcwDqFMfh HTTP/1.1" 200 -

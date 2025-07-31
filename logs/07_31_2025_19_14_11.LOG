@@ -1,0 +1,33 @@
+[2025-07-31 19:14:12,977] 161 - INFO - NumExpr defaulting to 4 threads.
+[2025-07-31 19:14:13,577] 30 - INFO - Staring data ingestion
+[2025-07-31 19:14:13,577] 23 - INFO - Created directory for raw data and other files too
+[2025-07-31 19:14:13,583] 26 - INFO - Read the data from raw csv file
+[2025-07-31 19:14:13,591] 32 - INFO - Train adn test datasets are saved successfully
+[2025-07-31 19:14:13,591] 40 - INFO - Starting data transformation stage
+[2025-07-31 19:14:13,592] 57 - INFO - Starting the initializer function for  preprocessing
+[2025-07-31 19:14:13,597] 60 - INFO - Successfully read and loaded the train and test data
+[2025-07-31 19:14:13,597] 63 - INFO - Target columns is math_score
+[2025-07-31 19:14:13,597] 64 - INFO - Splitting the data into features and target variables from both train and test dataset
+[2025-07-31 19:14:13,598] 70 - INFO - Successfully split the data
+[2025-07-31 19:14:13,598] 30 - INFO - Staring preprocessing function
+[2025-07-31 19:14:13,599] 34 - INFO -  Numerical Columns: ['reading_score', 'writing_score']
+[2025-07-31 19:14:13,599] 35 - INFO -  Categorical Columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[2025-07-31 19:14:13,599] 41 - INFO - Created numerical and categorical pipelines
+[2025-07-31 19:14:13,599] 46 - INFO - Created preprocessing pipeline with numerical and categorical column transformers
+[2025-07-31 19:14:13,599] 48 - INFO - Sucessfully created the preprocessing pipeline
+[2025-07-31 19:14:13,624] 75 - INFO - Successfully applied the preproocesssed techniques on train and test
+[2025-07-31 19:14:13,624] 80 - INFO - successfully concatenated the preprocessed features of train and test wtih thier respective target values
+[2025-07-31 19:14:13,627] 83 - INFO - Successfully saved the preprocessing.pkl file in the artifacts folder
+[2025-07-31 19:14:13,627] 44 - INFO - Data transformation completed Successufully
+[2025-07-31 19:14:13,627] 50 - INFO - Model Trainer Stage
+[2025-07-31 19:14:13,627] 28 - INFO - Successfully initiated model trainer class
+[2025-07-31 19:14:13,627] 65 - INFO - Defined models and params
+[2025-07-31 19:14:13,628] 66 - INFO - Initating model_evalution function from utils
+[2025-07-31 19:14:13,628] 28 - INFO - Runnnig model evalution function from Utils
+[2025-07-31 19:14:21,995] 46 - INFO - The function has been executed successfully
+[2025-07-31 19:14:21,995] 68 - INFO - Sorting best scores to sort the best model out of all the mdoels
+[2025-07-31 19:14:21,995] 71 - INFO - Best score is 0.8804332983749564
+[2025-07-31 19:14:21,995] 72 - INFO - Finding the best model name
+[2025-07-31 19:14:21,996] 77 - INFO - Best model is LinearRegression()
+[2025-07-31 19:14:22,001] 91 - INFO - Successfully executed the Model Trainer pipeline
+[2025-07-31 19:14:22,001] 54 - INFO - The model evalution stage has been executed successfully and the score is :0.8804332983749564%

@@ -1,0 +1,9 @@
+[2025-07-31 21:07:44,144] 97 - WARNING -  * Debugger is active!
+[2025-07-31 21:07:44,145] 97 - INFO -  * Debugger PIN: 202-409-145
+[2025-07-31 21:07:58,865] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:07:58] "GET / HTTP/1.1" 200 -
+[2025-07-31 21:08:04,277] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:08:04] "GET /predictdata HTTP/1.1" 200 -
+[2025-07-31 21:08:26,321] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:08:26] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2025-07-31 21:08:26,374] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:08:26] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-07-31 21:08:26,375] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:08:26] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-07-31 21:08:26,403] 97 - INFO - 127.0.0.1 - - [31/Jul/2025 21:08:26] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=9SVSYKj5fpJ9d7Is4wRf HTTP/1.1" 200 -
+[2025-07-31 21:24:20,390] 97 - INFO -  * Detected change in '/home/bhaskar/Here_we_go_again/VS_code_ting/mlworkflow/src/pipeline/prediction_pipeline.py', reloading

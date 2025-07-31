@@ -59,7 +59,7 @@ class DATA_TRANSFORMATION:
             test= pd.read_csv(test_data)
             logging.info('Successfully read and loaded the train and test data')
 
-            TARGET='math score'
+            TARGET='math_score'
             logging.info(f'Target columns is {TARGET}')
             logging.info('Splitting the data into features and target variables from both train and test dataset')
 

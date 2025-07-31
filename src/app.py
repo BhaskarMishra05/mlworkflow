@@ -1,57 +1,43 @@
-from src.logger import logging 
-from src.exception import CustomException
-
-import sys
 import os
-# from data ingestion
-from src.components.data_ingestion import DATAINGESTION
-# from data transformation
-from src.components.data_transformation import DATA_TRANSFORMATION
-# from data trainer
-from src.components.model_trainer import MODEL_TRAINER
+import sys
+import numpy as np
+import pandas as pd
+from flask import Flask, request, render_template
+from sklearn.preprocessing import StandardScaler
+from src.pipeline.prediction_pipeline import CUSTOMDATA, PredictPipeline
+
+application = Flask(__name__)
+app = application
+
+# route for index value
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+@app.route('/predictdata', methods= ['GET','POST'])
+def predict_datapoints():
+    if  request.method=='GET':
+        return render_template('home.html')
+    else:
+        data = CUSTOMDATA(
+                gender = request.form.get('gender'),
+                race_ethnicity = request.form.get('race_ethnicity'),
+                parental_level_of_education = request.form.get('parental_level_of_education'),
+                lunch = request.form.get('lunch'),
+                test_preparation_course = request.form.get('test_preparation_course'),
+                reading_score = request.form.get('reading_score'),
+                writing_score = request.form.get('writing_score')
+
+        )
+
+        pred_data = data.get_data_as_data_frame()
+        print(pred_data)
 
 
-
-# Just for testing the code
-# This part is commented out to avoid execution errors when running the script directly.
-# Uncomment the following lines to test the code directly.
-'''if __name__ == '__main__':
-    try:
-        logging.info('Starting the application')
-        a = 1 / 0
-    except Exception as e:
-        logging.error(f"An error occurred: {e}")
-        custom_error = CustomException(e, sys)
-        logging.error(custom_error)
-    logging.info('Application finished with errors')'''
+        predict_pipeline = PredictPipeline()
+        results = predict_pipeline.predict(pred_data)
+        return render_template('home.html', results = results[0])
+    
 
 if __name__ == '__main__':
-    try:
-        logging.info("Staring data ingestion")
-        data_ingestion_obj = DATAINGESTION()
-        data_ingestion_obj.initialize_data_ingestion()
-
-    except Exception as e:
-        logging.error(f'An error occured during data ingestion {e}')
-        raise CustomException (e,sys)
-    
-
-    try:
-        logging.info('Starting data transformation stage')
-        data_transformation_obj = DATA_TRANSFORMATION()
-        train_arr, test_arr, preprocessing_obj = data_transformation_obj.preprocessing_initializer_function(train_data=data_ingestion_obj.data_ingestion_config.train_data_path,
-                                                                                                                test_data=data_ingestion_obj.data_ingestion_config.test_data_path)
-        logging.info('Data transformation completed Successufully')
-    except Exception as e:
-        raise CustomException(e,sys)
-    
-
-    try:
-        logging.info('Model Trainer Stage')
-        model_trainer = MODEL_TRAINER()
-        score = model_trainer.model_trainer_initiator(train_arr, test_arr)
-        print(score)
-        logging.info(f'The model evalution stage has been executed successfully and the score is :{score}%')
-
-    except Exception as e:
-        raise CustomException(e,sys)
+    app.run(host="0.0.0.0", debug=True)

@@ -1,6 +1,7 @@
 import dill
 import os 
 import sys
+import joblib
 from src.logger import logging
 from src.exception import CustomException
 from src.components.data_ingestion import DATAINGESTION
@@ -48,3 +49,8 @@ def model_evaluation(X_train, y_train, X_test, y_test, models , params):
     except Exception as e:
         raise CustomException(e,sys)
     
+def load_object(file_path):
+    try:
+        return joblib.load(file_path)
+    except Exception as e:
+        raise CustomException(e, sys)
