@@ -28,4 +28,8 @@ MLWORKFLOW/
 ```
 #### Made data_ingestion , data_transformation and added raw data into artifacts folder
 
-## End of day 1 Successfully 
+## End of day 1 Successfully <br>
+
+# Day 2:
+`Create model trainer`
+`custom functions in utils`
