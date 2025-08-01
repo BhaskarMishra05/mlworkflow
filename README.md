@@ -37,3 +37,8 @@ MLWORKFLOW/
 `flask app`<br>
 
 ## End of day 2 Successfully <br>
+
+# Day 3:
+`Updated HTML files for better interfacae`<br>
+`Deploying with the help of Render` <br>
+

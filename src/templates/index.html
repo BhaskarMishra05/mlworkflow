@@ -1,5 +1,63 @@
-<html>
-<h1>
-    Welcome to the home page
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GIF Background Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Background GIF */
+        .bg-gif {
+            background: url('https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gif">
+        <div class="content-box">
+            <h1>Welcome to the Home Page</h1>
+            <p>Let’s predict some scores!</p>
+            <a href="{{ url_for('predict_datapoints') }}">
+                <button class="btn btn-custom">Go to Prediction Page</button>
+            </a>
+        </div>
+    </div>
+</body>
 </html>
