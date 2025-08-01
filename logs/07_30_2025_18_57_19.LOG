@@ -1,6 +1,0 @@
-[2025-07-30 18:57:20,924] 161 - INFO - NumExpr defaulting to 4 threads.
-[2025-07-30 18:57:21,335] 11 - INFO - Starting the application
-[2025-07-30 18:57:21,335] 14 - ERROR - An error occurred: division by zero
-[2025-07-30 18:57:21,335] 16 - ERROR - Error occurred in Python script name [/home/bhaskar/Here_we_go_again/VS_code_ting/mlworkflow/src/app.py] line number [12] error message [division by zero]
-[2025-07-30 18:57:21,335] 17 - INFO - Application finished with errors
-[2025-07-30 18:57:21,335] 26 - ERROR - An error occured during data ingestion module 'logging' has no attribute 'infio'

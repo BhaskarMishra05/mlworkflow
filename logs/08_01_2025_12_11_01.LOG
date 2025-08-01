@@ -1,5 +1,0 @@
-[2025-08-01 12:11:01,318] 9 - INFO - Starting Prediction Pipeline stage
-[2025-08-01 12:11:01,327] 97 - WARNING -  * Debugger is active!
-[2025-08-01 12:11:01,327] 97 - INFO -  * Debugger PIN: 202-409-145
-[2025-08-01 12:11:02,594] 97 - INFO - 127.0.0.1 - - [01/Aug/2025 12:11:02] "GET / HTTP/1.1" 200 -
-[2025-08-01 12:11:20,503] 97 - INFO - 127.0.0.1 - - [01/Aug/2025 12:11:20] "GET /predictdata HTTP/1.1" 200 -

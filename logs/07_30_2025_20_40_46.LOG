@@ -1,5 +1,0 @@
-[2025-07-30 20:40:49,439] 25 - INFO - Staring data ingestion
-[2025-07-30 20:40:49,439] 23 - INFO - Created directory for raw data and other files too
-[2025-07-30 20:40:49,447] 26 - INFO - Read the data from raw csv file
-[2025-07-30 20:40:49,466] 32 - INFO - Train adn test datasets are saved successfully
-[2025-07-30 20:40:49,466] 35 - INFO - Starting data transformation stage
